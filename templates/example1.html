@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Law Finder</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #A6BDEE, #E0E8F9); /* Light gradient background */
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #003366;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #FFCC00;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #003366;
+            font-weight: 700;
+        }
+
+        .about-section ul {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 900px;
+        }
+
+        .about-section ul li {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 18px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .about-section ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #FFCC00;
+            font-size: 1.8rem;
+            top: 3px;
+        }
+
+        /* Results Section */
+        .results-section {
+            padding: 60px 20px;
+            text-align: center;
+            flex-grow: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .result {
+            background: #f9f9f9;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .result:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .result p {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Chintan GPT</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2> How Finds and Summarizes Relevant Case Laws Efficiently</h2>
+        <ul>
+            <li>Uses advanced AI to analyze legal documents and extract key case law summaries.</li>
+            <li>Quickly identifies and retrieves relevant legal precedents from vast databases.</li>
+            <li>Reduces the time spent on manual legal research by providing instant case law summaries.</li>
+            <li>Assists lawyers, paralegals, and law students in finding accurate and reliable legal references.</li>
+            <li>Improves accuracy in legal research by providing context around case laws.</li>
+            <li>Supports a wide range of legal topics, from criminal law to intellectual property.</li>
+            <li>Utilizes natural language processing to break down complex legal terminology into simpler summaries.</li>
+            <li>Integrates seamlessly into legal workflows, helping users stay updated on the latest case laws.</li>
+            <li>Enables efficient comparative analysis between different case laws for in-depth understanding.</li>
+            <li>Provides search filters to refine case law results based on specific jurisdictions, courts, or dates.</li>
+        </ul>
+    </section>
+
+    <section class="results-section">
+        <div class="result">
+            <p>This case revolves around the legal implications of XYZ, with a ruling favoring ABC Corporation...</p>
+        </div>
+        <div class="result">
+            <p>In this case, the court examined the issues surrounding intellectual property rights, leading to a significant ruling...</p>
+        </div>
+        <!-- More results can be dynamically added here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chintan GPT. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Template Generator</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #A6BDEE, #E0E8F9); /* Light gradient background */
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #003366;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #FFCC00;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #003366;
+            font-weight: 700;
+        }
+
+        .about-section ul {
+            list-style-type: none;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 900px;
+        }
+
+        .about-section ul li {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 18px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .about-section ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #FFCC00;
+            font-size: 1.8rem;
+            top: 3px;
+        }
+
+        
+        /* Results Section */
+        .results-section {
+            padding: 60px 20px;
+            text-align: center;
+            flex-grow: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .result {
+            background: #f9f9f9;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .result:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .result p {
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Legal Template Generator</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2> Generates Tailored Legal Templates with Precision and Speed</h2>
+        <ul>
+            <li>Utilizes advanced AI to generate accurate and customized legal templates.</li>
+            <li>Delivers tailor-made contracts, agreements, and other legal documents in minutes.</li>
+            <li>Reduces the time and cost involved in drafting complex legal documents.</li>
+            <li>Ensures compliance with current laws and regulations for various jurisdictions.</li>
+            <li>Adaptable to different industries, including corporate, family, real estate, and more.</li>
+            <li>Easy to use interface for users with minimal legal knowledge.</li>
+            <li>Allows customization of clauses, terms, and conditions to meet specific needs.</li>
+            <li>Provides secure, reliable, and legally binding templates ready for use.</li>
+            <li>Updates templates regularly to reflect changes in laws and legal standards.</li>
+            <li>Integrates with existing legal workflows, enhancing productivity for legal professionals.</li>
+        </ul>
+    </section>
+
+
+    <section class="results-section">
+        <div class="result">
+            <p>This legal template generator allows you to create a customized non-disclosure agreement (NDA) based on your specific business requirements...</p>
+        </div>
+        <div class="result">
+            <p>With just a few inputs, the generator will create a tailored employment contract that includes your company's policies, compensation, and more...</p>
+        </div>
+        <!-- More results can be dynamically added here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Legal Template Generator. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

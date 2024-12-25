@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Brief Summarizer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4b79a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .about-section {
+            background: #fff;
+            padding: 40px;
+            margin: 30px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+
+        .about-section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #555;
+            position: relative;
+        }
+
+        .about-section ul li::before {
+            content: '✔';
+            color: #4b79a1;
+            position: absolute;
+            left: -25px;
+            font-size: 1.5rem;
+            top: 2px;
+        }
+
+        .results-section {
+            background: #fff;
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .result {
+            background: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .result p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        footer {
+            background: #4b79a1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Legal Brief Summarizer</h1>
+    </header>
+
+    <section class="about-section">
+        <h2>Effortlessly Summarizes Lengthy Legal Briefs</h2>
+        <ul>
+            <li>Uses AI-powered algorithms to generate concise summaries of lengthy legal documents.</li>
+            <li>Extracts key points and highlights essential information from complex legal text.</li>
+            <li>Reduces the time spent reading and reviewing long briefs.</li>
+            <li>Adapts summaries based on specific case details and legal focus areas.</li>
+            <li>Ensures no critical information is omitted in the summary process.</li>
+            <li>Simple and easy-to-understand summaries for quick decision-making.</li>
+        </ul>
+    </section>
+
+    <section class="results-section">
+        <div class="result">
+            <p>With just a few clicks, this tool will provide a detailed yet concise summary of your legal brief, saving time for legal professionals.</p>
+        </div>
+        <div class="result">
+            <p>Summarize complex legal documents instantly with the ability to customize the output based on the sections that matter most to you.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Legal Brief Summarizer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
